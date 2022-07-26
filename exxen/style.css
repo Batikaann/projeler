@@ -1,0 +1,200 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+/* genel ayarlar */
+html,
+body{
+margin: 0;
+padding: 0;
+height: 100%;
+background-color: black;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Trispace', sans-serif;
+}
+img{
+    width: 100%;
+}
+/* genel ayar bitiş */
+/* başlık */
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px 15px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: yellow;
+}
+header .sol{
+    margin-left: 15%;
+    display: flex;
+}
+header .sag{
+    margin-right: 15%;
+    display: flex;
+}
+.exenspor,
+.üye,
+#country{
+    margin-left: 15px;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.exenspor{
+    background-color: black;
+    color: yellow;
+}
+.üye{
+    background-color: yellow;
+    color: black;
+    border: solid black 1px;
+}
+#country{
+    border: none;
+    background-color: yellow;
+    color: black;
+}
+/* başlık bitiş */
+/* üye kısım başlangıç */
+.form{
+    width: 100%;
+    background-color: grey;
+    padding: 25px;
+    font-weight: 600;
+}
+.form-ici{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.form .form-ici input{
+    padding: 15px;
+    margin-left: 15px;
+    width: 100%;
+}
+.form .form-ici button{
+    padding: 15px;
+    width: 100%;
+    margin-left: 15px;
+    cursor: pointer;
+    background-color: yellow;
+    border: solid grey;
+}
+/* üye kısım bitiş */
+/* gövde ayarları */
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    padding: 0 80px;
+    padding-bottom: 100px;
+}
+.content{
+    width: 100%;
+    margin-top: 60px;
+}
+.column-25,
+.column-50,
+.column-100{
+    float: left;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+.column-25{
+    width: 25%;
+}
+.column-50{
+    width: 50%;
+}
+.column-100{
+    width: 100%;
+}
+/* gövde ayarları bitiş */
+/* alt kısım başlangıç */
+.device{
+    width: 100%;
+}
+.device{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.device img{
+    margin-top: 50px;
+    width: 320px;
+}
+.content h2{
+    color: white;
+    text-align: center;
+}
+.icerik{
+    width: 100%;
+}
+.icerik{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icerik img{
+    width: 120px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.help{
+    text-align: center;
+    color: yellow;
+    background-color: grey;
+    padding: 20px;
+    cursor: pointer;
+}
+/* alt kısım bitiş */
+.column-25 img{
+    cursor: pointer;
+}
+.column-100 img{
+    cursor: pointer;
+}
+.sosyal fa-brands{
+    color: white;
+}
+@media (max-width: 950px) {
+    /* .container{
+        width: 100%; uygulamayı unuttum***
+    } */
+    .header {
+      flex-direction: column;
+    }
+    .form{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .column-25{
+        width: 50%;
+    }
+  }
+  @media (max-width: 860px) {
+    .header {
+      flex-direction: column;
+    }
+    .form{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .column-25{
+        width: 100%;
+    }
+  }
